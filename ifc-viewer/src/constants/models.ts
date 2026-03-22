@@ -18,5 +18,7 @@ export const KNOWN_FRAGMENT_FILES = [
   'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.frag',
 ] as const;
 
-export const MODELS_BASE_PATH = '/models';
-export const FRAGMENTS_BASE_PATH = '/models/model-geometry/fragments';
+// Use Vite's base URL to support deployment on subdirectories (e.g., GitHub Pages)
+const BASE_URL = import.meta.env.BASE_URL;
+export const MODELS_BASE_PATH = `${BASE_URL}models`;
+export const FRAGMENTS_BASE_PATH = `${BASE_URL}models/model-geometry/fragments`;
