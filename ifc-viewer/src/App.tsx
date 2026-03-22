@@ -44,16 +44,15 @@ export default function App() {
       return; // Skip if already loading
     }
 
-    console.log('[App] Starting auto-load of 3DBAG and BGT');
+    console.log('[App] Starting auto-load of fragment model');
 
     const autoLoadModels = async () => {
-      const modelsToLoad = [
-        { url: `${MODELS_BASE_PATH}/source-models/ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.ifc`, fileName: 'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.ifc' },
-      ];
+      const fileName = 'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.frag';
+      const fragmentUrl = `${MODELS_BASE_PATH}/model-geometry/fragments/${encodeURIComponent(fileName)}`;
       
-      console.log('[App] Calling loadMultipleFromUrls with:', modelsToLoad);
-      await fragmentsManager.loadMultipleFromUrls(modelsToLoad);
-      console.log('[App] Auto-load complete');
+      console.log('[App] Loading fragment from:', fragmentUrl);
+      await fragmentsManager.loadFragmentFromUrl(fragmentUrl, fileName);
+      console.log('[App] Fragment load complete');
       
       // Set camera orbit point to model center after loading
       if (viewerCore && fragmentsManager.models.length > 0) {
@@ -63,7 +62,7 @@ export default function App() {
     };
 
     autoLoadModels();
-  }, [fragmentsManager.fragments, fragmentsManager.models.length, fragmentsManager.isLoading, fragmentsManager.loadMultipleFromUrls, viewerCore]);
+  }, [fragmentsManager.fragments, fragmentsManager.models.length, fragmentsManager.isLoading, fragmentsManager.loadFragmentFromUrl, viewerCore]);
   // Update camera orbit point whenever models change (e.g., manual loading)
   useEffect(() => {
     if (!viewerCore || fragmentsManager.models.length === 0 || fragmentsManager.isLoading) {

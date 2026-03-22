@@ -25,6 +25,8 @@ export interface UseFragmentsManagerReturn {
   loadIFC: (file: File) => Promise<void>;
   loadIFCFromUrl: (url: string, fileName: string) => Promise<void>;
   loadMultipleFromUrls: (urls: Array<{ url: string; fileName: string }>) => Promise<void>;
+  loadFragment: (file: File) => Promise<void>;
+  loadFragmentFromUrl: (url: string, fileName: string) => Promise<void>;
   clearAll: () => void;
   error: string | null;
 }
@@ -306,6 +308,69 @@ export function useFragmentsManager(
   );
 
   /**
+   * Load fragment file from File object
+   */
+  const loadFragment = useCallback(async (file: File) => {
+    if (!fragmentsRef.current) {
+      setError('Fragments manager not initialized');
+      return;
+    }
+
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const buffer = await file.arrayBuffer();
+      const uint8Array = new Uint8Array(buffer);
+      
+      await fragmentsRef.current.core.load(uint8Array, {
+        modelId: file.name,
+      });
+      console.log(`Successfully loaded fragment: ${file.name}`);
+    } catch (err) {
+      console.error(`Error loading fragment ${file.name}:`, err);
+      setError(err instanceof Error ? err.message : 'Failed to load fragment file');
+      throw err;
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  /**
+   * Load fragment file from URL
+   */
+  const loadFragmentFromUrl = useCallback(async (url: string, fileName: string) => {
+    if (!fragmentsRef.current) {
+      setError('Fragments manager not initialized');
+      return;
+    }
+
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const buffer = await response.arrayBuffer();
+      const uint8Array = new Uint8Array(buffer);
+
+      await fragmentsRef.current.core.load(uint8Array, {
+        modelId: fileName,
+      });
+      console.log(`Successfully loaded fragment: ${fileName}`);
+    } catch (err) {
+      console.error(`Error loading fragment ${fileName}:`, err);
+      setError(err instanceof Error ? err.message : 'Failed to load fragment from URL');
+      throw err;
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  /**
    * Clear all models
    */
   const clearAll = useCallback(() => {
@@ -326,6 +391,8 @@ export function useFragmentsManager(
     loadIFC,
     loadIFCFromUrl,
     loadMultipleFromUrls,
+    loadFragment,
+    loadFragmentFromUrl,
     clearAll,
     error,
   };

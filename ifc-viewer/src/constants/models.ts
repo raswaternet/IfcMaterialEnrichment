@@ -11,4 +11,12 @@ export const KNOWN_IFC_FILES = [
   '3D-omgeving.nl-GEO-Nulpunt.ifc',
 ] as const;
 
-export const MODELS_BASE_PATH = './models';
+/**
+ * Pre-converted fragment files for fast loading
+ */
+export const KNOWN_FRAGMENT_FILES = [
+  'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.frag',
+] as const;
+
+export const MODELS_BASE_PATH = '/models';
+export const FRAGMENTS_BASE_PATH = '/models/model-geometry/fragments';
