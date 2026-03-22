@@ -1,0 +1,19 @@
+:80 {
+  encode zstd gzip
+
+  header {
+    Referrer-Policy "strict-origin-when-cross-origin"
+    X-Content-Type-Options nosniff
+    X-Frame-Options SAMEORIGIN
+  }
+
+  handle /api/* {
+    reverse_proxy backend:8000
+  }
+
+  handle {
+    root * /srv
+    try_files {path} /index.html
+    file_server
+  }
+}
