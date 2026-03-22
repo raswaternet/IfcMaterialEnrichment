@@ -1,0 +1,59 @@
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+/* Force Three.js canvas to take full viewport */
+.full-screen canvas[data-engine="three.js"] {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 0 !important;
+}
+
+/* Ensure stats widget stays in correct position */
+.stats {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1000 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.options-menu {
+    position: fixed;
+    min-width: unset;
+    top: 5px;
+    right: 5px;
+    max-height: calc(100vh - 10px);
+}
+
+.phone-menu-toggler {
+    visibility: hidden;
+}
+
+@media (max-width: 480px) {
+    .options-menu {
+        visibility: hidden;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .options-menu-visible {
+        visibility: visible;
+    }
+
+    .phone-menu-toggler {
+        visibility: visible;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+    }
+}
