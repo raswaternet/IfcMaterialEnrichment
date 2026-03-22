@@ -10,7 +10,7 @@ import { ViewerProvider } from './contexts/ViewerContext';
 import { useViewerCore } from './hooks/useViewerCore';
 import { useFragmentsManager } from './hooks/useFragmentsManager';
 import { useSelection } from './hooks/useSelection';
-import { MODELS_BASE_PATH } from './constants/models';
+import { FRAGMENTS_BASE_PATH } from './constants/models';
 
 export default function App() {
   const [opened, { toggle }] = useDisclosure();
@@ -48,7 +48,7 @@ export default function App() {
 
     const autoLoadModels = async () => {
       const fileName = 'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.frag';
-      const fragmentUrl = `${MODELS_BASE_PATH}/models/model-geometry/fragments/${encodeURIComponent(fileName)}`;
+      const fragmentUrl = `${FRAGMENTS_BASE_PATH}/${encodeURIComponent(fileName)}`;
       
       console.log('[App] Loading fragment from:', fragmentUrl);
       await fragmentsManager.loadFragmentFromUrl(fragmentUrl, fileName);
