@@ -11,4 +11,4 @@ export const KNOWN_IFC_FILES = [
   '3D-omgeving.nl-GEO-Nulpunt.ifc',
 ] as const;
 
-export const MODELS_BASE_PATH = '/models';
+export const MODELS_BASE_PATH = './models';
