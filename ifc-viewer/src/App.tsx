@@ -48,7 +48,7 @@ export default function App() {
 
     const autoLoadModels = async () => {
       const fileName = 'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.frag';
-      const fragmentUrl = `${MODELS_BASE_PATH}/model-geometry/fragments/${encodeURIComponent(fileName)}`;
+      const fragmentUrl = `${MODELS_BASE_PATH}/models/model-geometry/fragments/${encodeURIComponent(fileName)}`;
       
       console.log('[App] Loading fragment from:', fragmentUrl);
       await fragmentsManager.loadFragmentFromUrl(fragmentUrl, fileName);
