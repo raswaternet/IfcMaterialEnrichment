@@ -20,5 +20,7 @@ export const KNOWN_FRAGMENT_FILES = [
 
 // Use Vite's base URL to support deployment on subdirectories (e.g., GitHub Pages)
 const BASE_URL = import.meta.env.BASE_URL;
-export const MODELS_BASE_PATH = `${BASE_URL}models`;
-export const FRAGMENTS_BASE_PATH = `${BASE_URL}models/model-geometry/fragments`;
+// Ensure BASE_URL ends with slash
+const baseUrl = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
+export const MODELS_BASE_PATH = `${baseUrl}models`;
+export const FRAGMENTS_BASE_PATH = `${baseUrl}models/model-geometry/fragments`;
