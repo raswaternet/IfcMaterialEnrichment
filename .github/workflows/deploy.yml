@@ -25,9 +25,20 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'yarn'
-          cache-dependency-path: ifc-viewer/yarn.lock
+          node-version: '22'
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ifc-viewer/node_modules
+            ifc-viewer/.yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('ifc-viewer/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - name: Setup Pages
         id: pages
@@ -36,7 +47,6 @@ jobs:
       - name: Install dependencies
         run: |
           cd ifc-viewer
-          corepack enable
           yarn install --immutable
 
       - name: Build
