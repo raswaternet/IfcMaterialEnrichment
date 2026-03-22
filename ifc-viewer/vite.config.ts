@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/IfcMaterialEnrichment/',
+  base: process.env.BASE_PATH ?? '/',
   plugins: [react()],
   optimizeDeps: {
     entries: ['src/**/*.{ts,tsx}', 'index.html'],

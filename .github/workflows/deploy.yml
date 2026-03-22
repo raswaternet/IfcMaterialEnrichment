@@ -29,6 +29,10 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: ifc-viewer/yarn.lock
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Install dependencies
         run: |
           cd ifc-viewer
@@ -36,12 +40,11 @@ jobs:
           yarn install --immutable
 
       - name: Build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
           cd ifc-viewer
           yarn build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
