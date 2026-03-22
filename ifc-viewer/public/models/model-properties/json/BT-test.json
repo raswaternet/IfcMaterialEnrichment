@@ -1,0 +1,63 @@
+{
+  "elements": {
+    "2yihfq03Jaw00000000OHa": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "BIM": {
+          "Fase": "0",
+          "WBS-code": "0.00.000",
+          "Area": null,
+          "Volume": 259944.00000000012,
+          "2D-length": "?",
+          "Handle": null,
+          "LengthACAD-2D": null,
+          "LengthACAD-3D": null,
+          "3D-length": "?"
+        }
+      }
+    },
+    "10lephlA2widG0DEJe74hq": {
+      "type": "IfcBuilding",
+      "properties": {
+        "Pset_BuildingCommon": {
+          "BuildingID": null,
+          "IsPermanentID": false,
+          "MainFireUse": null,
+          "AncillaryFireUse": null,
+          "SprinklerProtection": false,
+          "SprinklerProtectionAutomatic": false,
+          "OccupancyType": null,
+          "GrossPlannedArea": 0.0,
+          "NumberOfStoreys": 0,
+          "YearOfConstruction": null,
+          "IsLandmarked": false
+        },
+        "Pset_BuildingUse": {
+          "MarketCategory": null,
+          "MarketSubCategory": null,
+          "PlanningControlStatus": null,
+          "NarrativeText": null,
+          "VacancyRateInCategoryNow": 0.0,
+          "VacancyRateInCategoryFuture": 0.0
+        },
+        "Pset_BuildingUseAdjacent": {
+          "MarketCategory": null,
+          "MarketSubCategory": null,
+          "PlanningControlStatus": null,
+          "NarrativeText": null
+        },
+        "Pset_BuildingWaterStorage": {
+          "WaterStorageRatePerPerson": 0.0,
+          "OneDayPotableWater": 0.0,
+          "OneDayEssentialWater": 0.0,
+          "OneDayCoolingTowerMakeupWater": 0.0,
+          "OneDayProcessOrProductionWater": 0.0
+        },
+        "ePset_BuildingEnergyTarget": {
+          "BuildingEnergyTargetUnits": null,
+          "BuildingEnergyTargetValue": 0.0
+        }
+      }
+    }
+  }
+}

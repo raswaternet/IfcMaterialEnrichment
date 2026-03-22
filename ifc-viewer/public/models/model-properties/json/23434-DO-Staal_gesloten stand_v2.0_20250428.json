@@ -1,0 +1,152 @@
+{
+  "elements": {
+    "04yUuTmUb01O08BKFJJtVy": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "Pset_BuildingElementProxyCommon": {
+          "Reference": "23434-10-A"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Generic Models"
+        },
+        "Pset_QuantityTakeOff": {
+          "Reference": "23434-10-A"
+        }
+      }
+    },
+    "04yUuTmUb01O08BKFJJtV2": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "Pset_BuildingElementProxyCommon": {
+          "Reference": "23434-05-A"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Generic Models"
+        },
+        "Pset_QuantityTakeOff": {
+          "Reference": "23434-05-A"
+        }
+      }
+    },
+    "04yUuTmUb01O08BKFJJtV1": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "Pset_BuildingElementProxyCommon": {
+          "Reference": "23434-08-A"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Generic Models"
+        },
+        "Pset_QuantityTakeOff": {
+          "Reference": "23434-08-A"
+        }
+      }
+    },
+    "04yUuTmUb01O08BKFJJtV0": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "Pset_BuildingElementProxyCommon": {
+          "Reference": "23434-02-A"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Generic Models"
+        },
+        "Pset_QuantityTakeOff": {
+          "Reference": "23434-02-A"
+        }
+      }
+    },
+    "04yUuTmUb01O08BKFJJtV7": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "Pset_BuildingElementProxyCommon": {
+          "Reference": "23434-01-301"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Generic Models"
+        },
+        "Pset_QuantityTakeOff": {
+          "Reference": "23434-01-301"
+        }
+      }
+    },
+    "04yUuTmUb01O08BKFJJtV6": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "Pset_BuildingElementProxyCommon": {
+          "Reference": "23434-07-A"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Generic Models"
+        },
+        "Pset_QuantityTakeOff": {
+          "Reference": "23434-07-A"
+        }
+      }
+    },
+    "04yUuTmUb01O08BKFJJtV5": {
+      "type": "IfcBuildingElementProxy",
+      "properties": {
+        "Pset_BuildingElementProxyCommon": {
+          "Reference": "23434-06-A"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Generic Models"
+        },
+        "Pset_QuantityTakeOff": {
+          "Reference": "23434-06-A"
+        }
+      }
+    },
+    "0XWSUT_CLF39ddDbvU5hns": {
+      "type": "IfcBuilding",
+      "properties": {
+        "Pset_BuildingCommon": {
+          "NumberOfStoreys": 1,
+          "IsLandmarked": "UNKNOWN"
+        },
+        "Pset_ProductRequirements": {
+          "Category": "Project Information"
+        }
+      }
+    },
+    "0XWSUT_CLF39ddDbwXwKba": {
+      "type": "IfcBuildingStorey",
+      "properties": {
+        "Pset_AirSideSystemInformation": {
+          "Name": "Waterpeil"
+        },
+        "Pset_BuildingStoreyCommon": {
+          "AboveGround": "UNKNOWN"
+        },
+        "Pset_ProductRequirements": {
+          "Name": "Waterpeil",
+          "Category": "Levels"
+        }
+      }
+    },
+    "0XWSUT_CLF39ddDbwX_1qV": {
+      "type": "IfcBuildingStorey",
+      "properties": {
+        "Pset_AirSideSystemInformation": {
+          "Name": "NAP"
+        },
+        "Pset_BuildingStoreyCommon": {
+          "AboveGround": "UNKNOWN"
+        },
+        "Pset_ProductRequirements": {
+          "Name": "NAP",
+          "Category": "Levels"
+        }
+      }
+    },
+    "0XWSUT_CLF39ddDbvU5hnr": {
+      "type": "IfcSite",
+      "properties": {
+        "Pset_ProductRequirements": {
+          "Category": "Project Information"
+        }
+      }
+    }
+  }
+}
