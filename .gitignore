@@ -34,3 +34,6 @@ logs
 
 # Vitest
 /coverage
+
+# AI tooling
+.claude

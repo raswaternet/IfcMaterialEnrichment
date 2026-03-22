@@ -48,8 +48,7 @@ export default function App() {
 
     const autoLoadModels = async () => {
       const modelsToLoad = [
-        { url: `${MODELS_BASE_PATH}/3D-omgeving.nl-3DBAG.ifc`, fileName: '3D-omgeving.nl-3DBAG.ifc' },
-        { url: `${MODELS_BASE_PATH}/3D-omgeving.nl-BGT.ifc`, fileName: '3D-omgeving.nl-BGT.ifc' },
+        { url: `${MODELS_BASE_PATH}/source-models/ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.ifc`, fileName: 'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.ifc' },
       ];
       
       console.log('[App] Calling loadMultipleFromUrls with:', modelsToLoad);
