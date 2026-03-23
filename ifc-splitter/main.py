@@ -2,7 +2,9 @@
 IFC Splitter - Progressive IFC to Linked Data Converter
 
 Extracts semantic data from IFC to a single RDF/Turtle file:
-- Materials, properties, classifications, types → data.ttl
+- Physical objects (walls, windows, doors, etc.) with measurements
+- Material associations with calculated fractions
+- Material definitions → data.ttl
 
 The remaining IFC contains only geometry + spatial structure.
 Output is organized per-model for GitHub Pages serving.
@@ -17,11 +19,11 @@ import re
 import ifcopenshell
 from rdflib import Graph
 
-from extractors import MaterialExtractor
+from extractors import PhysicalObjectExtractor
 from rdf import bind_namespaces
 
 # Future extractors to import:
-# from extractors import TypeExtractor, PropertyExtractor, ClassificationExtractor
+# from extractors import PropertyExtractor, ClassificationExtractor, TypeExtractor
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -104,10 +106,10 @@ def main():
     bind_namespaces(combined_graph)
 
     extractors = [
-        MaterialExtractor(ifc, model_slug),
-        # TypeExtractor(ifc, model_slug),
+        PhysicalObjectExtractor(ifc, model_slug),
         # PropertyExtractor(ifc, model_slug),
         # ClassificationExtractor(ifc, model_slug),
+        # TypeExtractor(ifc, model_slug),
     ]
 
     total_entities = 0

@@ -34,8 +34,8 @@ class ConceptExtractor(ABC):
         self.model_slug = model_slug
         self.graph = Graph()
 
-        # Create model-scoped instance namespace
-        self.inst_ns = Namespace(f"{BASE_URL}models/{model_slug}/")
+        # Create model-scoped instance namespace with data.ttl# fragment
+        self.inst_ns = Namespace(f"{BASE_URL}models/{model_slug}/data.ttl#")
 
         # Bind standard namespaces plus model-specific instance namespace
         bind_namespaces(self.graph)
@@ -59,9 +59,14 @@ class ConceptExtractor(ABC):
         return self.graph
 
     def _collect_entities(self):
-        """Collect all entities of the specified types."""
+        """Collect all entities of the specified types, handling schema differences."""
         for etype in self.entity_types:
-            self._extracted_entities.extend(self.ifc.by_type(etype))
+            try:
+                # Only query if this entity type exists in the schema
+                self._extracted_entities.extend(self.ifc.by_type(etype))
+            except RuntimeError:
+                # Entity type doesn't exist in this IFC schema version
+                pass
 
     def _collect_relations(self):
         """Collect all relationships of the specified types."""

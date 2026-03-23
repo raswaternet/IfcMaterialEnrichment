@@ -1,0 +1,2099 @@
+@prefix ifc: <https://standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx#> .
+@prefix ifc-prop: <https://standards.buildingsmart.org/ifc/core/prop@v5a.ifcx#> .
+@prefix inst: <https://raswaternet.github.io/IfcMaterialEnrichment/models/roads/data.ttl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+inst:bd4db354-182b-9210-0000-000000033584 a ifc:IfcBuildingElementProxy ;
+    rdfs:label "BUILDINGELEMENTPROXY(2)" ;
+    ifc-prop:name "BUILDINGELEMENTPROXY(2)" .
+
+inst:bd4db354-182b-9210-0000-0000000387f9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d16e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d175 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d17c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d183 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d18a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d191 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d198 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d19f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1a6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1ad a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1b4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1bb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1c2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1c9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1d0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1d7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1de a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1e5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1ec a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1f3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d1fa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d201 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d208 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d20f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d216 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d21d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d224 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d22b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d232 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d239 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d240 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d247 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d24e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d255 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d25c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d263 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d26a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d271 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d278 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d27f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d286 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d28d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d294 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d29b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2a2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2a9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2b0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2b7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2be a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2c5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2cc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2d3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2da a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2e1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2e8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2ef a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2f6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d2fd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d304 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d30b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d312 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d319 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d320 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d327 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d32e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d335 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d33c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d343 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d34a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d351 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d358 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d35f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d366 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d36d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d374 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d37b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d382 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d389 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d390 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d397 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d39e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3a5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3ac a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3b3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3ba a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3c1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3c8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3cf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3d6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3dd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3e4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3eb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3f2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d3f9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d400 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d407 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d40e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d415 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d41c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d423 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d42a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d431 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d438 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d43f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d446 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d44d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d454 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d45b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d462 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d469 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d470 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d477 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d47e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d485 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d48c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d493 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d49a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4a1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4a8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4af a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4b6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4bd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4c4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4cb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4d2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4d9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4e0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4e7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4ee a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4f5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d4fc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d503 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d50a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d511 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d518 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d51f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d526 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d52d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d534 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d53b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d542 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d549 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d550 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d557 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d55e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d565 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d56c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d573 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d57a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d581 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d588 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d58f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d596 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d59d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5a4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5ab a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5b2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5b9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5c0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5c7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5ce a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5d5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5dc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5e3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5ea a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5f1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5f8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d5ff a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d606 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d60d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d614 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d61b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d622 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d629 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d630 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d637 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d63e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d645 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d64c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d653 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d65a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d661 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d668 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d66f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d676 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d67d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d684 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d68b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d692 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d699 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6a0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6a7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6ae a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6b5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6bc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6c3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6ca a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6d1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6d8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6df a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6e6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6ed a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6f4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d6fb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d702 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d709 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d710 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d717 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d71e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d725 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d72c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d733 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d73a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d741 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d748 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d74f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d756 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d75d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d764 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d76b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d772 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d779 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d780 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d787 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d78e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d795 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d79c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7a3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7aa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7b1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7b8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7bf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7c6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7cd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7d4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7db a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7e2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7e9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7f0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7f7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d7fe a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d805 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d80c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d813 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d81a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d821 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d828 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d82f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d836 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d83d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d844 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d84b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d852 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d859 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d860 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d867 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d86e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d875 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d87c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d883 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d88a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d891 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d898 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d89f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8a6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8ad a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8b4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8bb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8c2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8c9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8d0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8d7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8de a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8e5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8ec a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8f3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d8fa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d901 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d908 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d90f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d916 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d91d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d924 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d92b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d932 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d939 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d940 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d947 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d94e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d955 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d95c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d963 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d96a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d971 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d978 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d97f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d986 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d98d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d994 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d99b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9a2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9a9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9b0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9b7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9be a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9c5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9cc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9d3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9da a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9e1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9e8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9ef a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9f6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003d9fd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da04 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da0b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da12 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da19 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da20 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da27 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da2e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da35 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da3c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da43 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da4a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da51 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da58 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da5f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da66 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da6d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da74 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da7b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da82 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da89 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da90 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da97 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003da9e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003daa5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003daac a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dab3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003daba a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dac1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dac8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dacf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dad6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dadd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dae4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003daeb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003daf2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003daf9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db00 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db07 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db0e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db15 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db1c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db23 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db2a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db31 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db38 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db3f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db46 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db4d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db54 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db5b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db62 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db69 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db70 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db77 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db7e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db85 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db8c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db93 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003db9a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dba1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dba8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbaf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbb6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbbd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbc4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbcb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbd2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbd9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbe0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbe7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbee a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbf5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dbfc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc03 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc0a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc11 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc18 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc1f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc26 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc2d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc34 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc3b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc42 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc49 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc50 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc57 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc5e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc65 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc6c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc73 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc7a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc81 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc88 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc8f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc96 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dc9d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dca4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcab a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcb2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcb9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcc0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcc7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcce a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcd5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcdc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dce3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcea a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcf1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcf8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dcff a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd06 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd0d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd14 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd1b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd22 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd29 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd30 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd37 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd3e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd45 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd4c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd53 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd5a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd61 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd68 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd6f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd76 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd7d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd84 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd8b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd92 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dd99 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dda0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dda7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddae a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddb5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddbc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddc3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddca a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddd1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddd8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dddf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dde6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dded a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddf4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ddfb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de02 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de09 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de10 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de17 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de1e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de25 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de2c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de33 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de3a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de41 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de48 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de4f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de56 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de5d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de64 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de6b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de72 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de79 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de80 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de87 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de8e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de95 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003de9c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dea3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003deaa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003deb1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003deb8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003debf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dec6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003decd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ded4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dedb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dee2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dee9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003def0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003def7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003defe a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df05 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df0c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df13 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df1a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df21 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df28 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df2f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df36 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df3d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df44 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df4b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df52 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df59 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df60 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df67 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df6e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df75 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df7c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df83 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df8a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df91 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df98 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003df9f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfa6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfad a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfb4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfbb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfc2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfc9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfd0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfd7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfde a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfe5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dfec a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dff3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003dffa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e001 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e008 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e00f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e016 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e01d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e024 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e02b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e032 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e039 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e040 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e047 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e04e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e055 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e05c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e063 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e06a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e071 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e078 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e07f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e086 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e08d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e094 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e09b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0a2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0a9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0b0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0b7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0be a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0c5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0cc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0d3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0da a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0e1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0e8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0ef a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0f6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e0fd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e104 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e10b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e112 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e119 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e120 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e127 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e12e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e135 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e13c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e143 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e14a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e151 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e158 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e15f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e166 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e16d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e174 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e17b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e182 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e189 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e190 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e197 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e19e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1a5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1ac a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1b3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1ba a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1c1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1c8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1cf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1d6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1dd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1e4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1eb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1f2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e1f9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e200 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e207 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e20e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e215 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e21c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e223 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e22a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e231 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e238 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e23f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e246 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e24d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e254 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e25b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e262 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e269 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e270 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e277 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e27e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e285 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e28c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e293 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e29a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2a1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2a8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2af a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2b6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2bd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2c4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2cb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2d2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2d9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2e0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2e7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2ee a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2f5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e2fc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e303 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e30a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e311 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e318 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e31f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e326 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e32d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e334 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e33b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e342 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e349 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e350 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e357 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e35e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e365 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e36c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e373 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e37a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e381 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e388 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e38f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e396 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e39d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3a4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3ab a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3b2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3b9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3c0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3c7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3ce a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3d5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3dc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3e3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3ea a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3f1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3f8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e3ff a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e406 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e40d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e414 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e41b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e422 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e429 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e430 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e437 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e43e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e445 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e44c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e453 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e45a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e461 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e468 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e46f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e476 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e47d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e484 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e48b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e492 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e499 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4a0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4a7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4ae a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4b5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4bc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4c3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4ca a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4d1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4d8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4df a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4e6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4ed a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4f4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e4fb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e502 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e509 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e510 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e517 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e51e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e525 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e52c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e533 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e53a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e541 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e548 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e54f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e556 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e55d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e564 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e56b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e572 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e579 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e580 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e587 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e58e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e595 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e59c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5a3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5aa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5b1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5b8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5bf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5c6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5cd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5d4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5db a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5e2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5e9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5f0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5f7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e5fe a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e605 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e60c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e613 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e61a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e621 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e628 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e62f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e636 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e63d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e644 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e64b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e652 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e659 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e660 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e667 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e66e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e675 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e67c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e683 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e68a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e691 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e698 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e69f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6a6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6ad a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6b4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6bb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6c2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6c9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6d0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6d7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6de a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6e5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6ec a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6f3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e6fa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e701 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e708 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e70f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e716 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e71d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e724 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e72b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e732 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e739 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e740 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e747 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e74e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e755 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e75c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e763 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e76a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e771 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e778 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e77f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e786 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e78d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e794 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e79b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7a2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7a9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7b0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7b7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7be a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7c5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7cc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7d3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7da a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7e1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7e8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7ef a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7f6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e7fd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e804 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e80b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e812 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e819 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e820 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e827 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e82e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e835 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e83c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e843 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e84a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e851 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e858 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e85f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e866 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e86d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e874 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e87b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e882 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e889 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e890 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e897 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e89e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8a5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8ac a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8b3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8ba a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8c1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8c8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8cf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8d6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8dd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8e4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8eb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8f2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e8f9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e900 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e907 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e90e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e915 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e91c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e923 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e92a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e931 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e938 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e93f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e946 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e94d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e954 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e95b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e962 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e969 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e970 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e977 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e97e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e985 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e98c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e993 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e99a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9a1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9a8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9af a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9b6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9bd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9c4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9cb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9d2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9d9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9e0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9e7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9ee a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9f5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003e9fc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea03 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea0a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea11 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea18 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea1f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea26 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea2d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea34 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea3b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea42 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea49 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea50 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea57 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea5e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea65 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea6c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea73 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea7a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea81 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea88 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea8f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea96 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ea9d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eaa4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eaab a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eab2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eab9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eac0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eac7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eace a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ead5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eadc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eae3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eaea a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eaf1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eaf8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eaff a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb06 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb0d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb14 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb1b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb22 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb29 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb30 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb37 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb3e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb45 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb4c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb53 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb5a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb61 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb68 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb6f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb76 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb7d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb84 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb8b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb92 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eb99 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eba0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eba7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebae a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebb5 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebbc a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebc3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebca a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebd1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebd8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebdf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebe6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebed a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebf4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ebfb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec02 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec09 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec10 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec17 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec1e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec25 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec2c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec33 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec3a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec41 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec48 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec4f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec56 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec5d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec64 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec6b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec72 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec79 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec80 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec87 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec8e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec95 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ec9c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eca3 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecaa a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecb1 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecb8 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecbf a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecc6 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eccd a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecd4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecdb a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ece2 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ece9 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecf0 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecf7 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ecfe a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed05 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed0c a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed13 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed1a a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed21 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed28 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed2f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed36 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed3d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed44 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed4b a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed52 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed59 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed60 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed67 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed6e a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed6f a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed70 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed71 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed72 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed73 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed96 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003ed9d a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003eda4 a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003edab a ifc:IfcBuildingElementProxy .
+
+inst:bd4db354-182b-9210-0000-00000003edf3 a ifc:IfcBuildingElementProxy ;
+    rdfs:label "BUILDINGELEMENTPROXY(3)" ;
+    ifc-prop:name "BUILDINGELEMENTPROXY(3)" .
+
+inst:bd4db354-182b-9210-0000-00000003edf6 a ifc:IfcBuildingElementProxy ;
+    rdfs:label "BUILDINGELEMENTPROXY(4)" ;
+    ifc-prop:name "BUILDINGELEMENTPROXY(4)" .
+
+inst:bd4db354-182b-9210-0000-00000003edf9 a ifc:IfcBuildingElementProxy ;
+    rdfs:label "BUILDINGELEMENTPROXY(5)" ;
+    ifc-prop:name "BUILDINGELEMENTPROXY(5)" .
+
+inst:bd4db354-182b-9210-0000-00000003edff a ifc:IfcBuildingElementProxy ;
+    rdfs:label "BUILDINGELEMENTPROXY(7)" ;
+    ifc-prop:name "BUILDINGELEMENTPROXY(7)" .
+
+inst:bd4db354-182b-9210-0000-00000003ee02 a ifc:IfcBuildingElementProxy ;
+    rdfs:label "BUILDINGELEMENTPROXY(8)" ;
+    ifc-prop:name "BUILDINGELEMENTPROXY(8)" .
+

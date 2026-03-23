@@ -73,7 +73,6 @@ class MaterialExtractor(ConceptExtractor):
 
         # Name
         if material.Name:
-            self.graph.add((mat_iri, RDFS.label, Literal(material.Name)))
             self.graph.add((mat_iri, IFC_PROP["name"], Literal(material.Name)))
 
             # Attempt bSDD class link based on name (placeholder for API lookup)
@@ -97,7 +96,6 @@ class MaterialExtractor(ConceptExtractor):
         self.graph.add((set_iri, RDF.type, IFC["IfcMaterialLayerSet"]))
 
         if layer_set.LayerSetName:
-            self.graph.add((set_iri, RDFS.label, Literal(layer_set.LayerSetName)))
             self.graph.add((set_iri, IFC_PROP["layerSetName"], Literal(layer_set.LayerSetName)))
 
         # Link to layers
@@ -128,7 +126,6 @@ class MaterialExtractor(ConceptExtractor):
 
         # Name (IFC4+)
         if hasattr(layer, "Name") and layer.Name:
-            self.graph.add((layer_iri, RDFS.label, Literal(layer.Name)))
             self.graph.add((layer_iri, IFC_PROP["name"], Literal(layer.Name)))
 
     def _convert_constituent_set(self, constituent_set):
@@ -138,7 +135,6 @@ class MaterialExtractor(ConceptExtractor):
         self.graph.add((set_iri, RDF.type, IFC["IfcMaterialConstituentSet"]))
 
         if constituent_set.Name:
-            self.graph.add((set_iri, RDFS.label, Literal(constituent_set.Name)))
             self.graph.add((set_iri, IFC_PROP["name"], Literal(constituent_set.Name)))
 
         if constituent_set.MaterialConstituents:
@@ -153,7 +149,6 @@ class MaterialExtractor(ConceptExtractor):
         self.graph.add((const_iri, RDF.type, IFC["IfcMaterialConstituent"]))
 
         if constituent.Name:
-            self.graph.add((const_iri, RDFS.label, Literal(constituent.Name)))
             self.graph.add((const_iri, IFC_PROP["name"], Literal(constituent.Name)))
 
         if constituent.Material:

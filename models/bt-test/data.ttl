@@ -1,0 +1,11 @@
+@prefix ifc: <https://standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx#> .
+@prefix ifc-prop: <https://standards.buildingsmart.org/ifc/core/prop@v5a.ifcx#> .
+@prefix inst: <https://raswaternet.github.io/IfcMaterialEnrichment/models/bt-test/data.ttl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+inst:bcb2ba74-0034-e4e8-0000-00000001845e a ifc:IfcBuildingElementProxy ;
+    rdfs:label "BUILDINGELEMENTPROXY(1)" ;
+    ifc-prop:name "BUILDINGELEMENTPROXY(1)" .
+
+inst:bcb2ba74-0034-e4e8-0000-000000018464 a ifc:IfcBuildingElementProxy .
+

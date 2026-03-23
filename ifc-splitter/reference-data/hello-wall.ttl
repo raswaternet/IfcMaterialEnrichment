@@ -10,7 +10,9 @@
 
 # Instance data
 ## Wall
-inst:93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b a ifc:IfcWall ;
+inst:93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b
+    a ifc:IfcWall ;
+    ifc-prop:name "Wall" ;
     ifc-prop:IsExternal true ;
     ifc-prop:Volume 2.783999976 ;
     ifc-prop:Height 3.0 ;
@@ -20,6 +22,7 @@ inst:93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b a ifc:IfcWall ;
 ## Window 
 inst:2c2d549f-f9fe-4e22-8590-562fda81a690
     a ifc:IfcWindow ;
+    ifc-prop:name "Window" ;
     ifc-prop:IsExternal true ;
     ifc-prop:Volume 0.025999999592 ;    # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
     ifc-prop:Height 1.2 ;               # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
@@ -35,6 +38,7 @@ inst:2c2d549f-f9fe-4e22-8590-562fda81a690
 ## Window_001
 inst:592504dc-469a-44d6-9ae8-c801b591679b
     a ifc:IfcWindow ;
+    ifc-prop:name "Window_001" ;
     ifc-prop:IsExternal true ; 
     ifc-prop:Volume 0.025999999592 ;    # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
     ifc-prop:Height 1.2 ;               # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
@@ -73,7 +77,7 @@ midas-materials:WOOD
     ifc-mat:StrengthClass "C24" ;
     ifc-mat:MoistureContent 0.56 ;
     ifc-mat:MassDensity 529.0 ;
-    ifc-prop:GWP [
+    ifc-mat:GWP [
         ifc-mat:A1-A3 -629.4 ;
         ifc-mat:A4 0 ;
         ifc-mat:A5 0 ;

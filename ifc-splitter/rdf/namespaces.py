@@ -38,7 +38,7 @@ NAMESPACE_BINDINGS = {
     "ifc": IFC,
     "ifc-prop": IFC_PROP,
     "ifc-mat": IFC_MAT,
-    "ifc-presentation:"
+    "ifc-presentation": IFC_PRESENTATION,
     # "inst": IFCX_INST,
     "bsdd": BSDD,
     "bsdd-prop": BSDD_PROP,
