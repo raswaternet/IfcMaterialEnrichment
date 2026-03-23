@@ -1,0 +1,95 @@
+@prefix ex: <https://data.example.org/filename.ifc#> .
+@prefix ifc: <https://standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx#> .
+@prefix ifc-mat: <https://standards.buildingsmart.org/ifc/ifc-mat/ifc-mat@v1.0.0.ifcx#> .
+@prefix ifc-prop: <https://standards.buildingsmart.org/ifc/core/prop@v5a.ifcx#> .
+@prefix ifc-presentation: <https://data.example.org/ifc-presentation#> .
+@prefix midas-materials: <https://identifier.buildingsmart.org/uri/fish/midas-materials/26/class/> .
+@prefix naakt: <https://identifier.buildingsmart.org/uri/nkt/naakt/2.4/class/> .
+@prefix nlsfb: <https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2/class/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Instance data
+## Wall
+ex:93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b a ifc:IfcWall ;
+    ifc-prop:IsExternal true ;
+    ifc-prop:Volume 2.783999976 ;
+    ifc-prop:Height 3.0 ;
+    nlsfb:class nlsfb:21.21 ;
+    ifc:material midas-materials:CONCRETE .
+
+## Window 
+ex:2c2d549f-f9fe-4e22-8590-562fda81a690
+    a ifc:IfcWindow ;
+    ifc-prop:IsExternal true ;
+    ifc-prop:Volume 0.025999999592 ;    # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
+    ifc-prop:Height 1.2 ;               # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
+    ifc:material [
+        a midas-materials:WOOD ;
+        ifc-prop:Fraction 0.6 ;
+    ] ;
+    ifc:material [
+        a midas-materials:GLASS ;
+        ifc-prop:Fraction 0.4 ;
+    ] .
+
+## Window_001
+ex:592504dc-469a-44d6-9ae8-c801b591679b
+    a ifc:IfcWindow ;
+    ifc-prop:IsExternal true ; 
+    ifc-prop:Volume 0.025999999592 ;    # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
+    ifc-prop:Height 1.2 ;               # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
+    ifc:material [
+        a midas-materials:WOOD ;
+        ifc-prop:Fraction 0.6 ;
+    ] ;
+    ifc:material [
+        a midas-materials:GLASS ;
+        ifc-prop:Fraction 0.4 ;
+    ] .
+
+# Material data (might end up partly contained in a different dictionary)
+midas-materials:CONCRETE 
+    a ifc:IfcMaterial ;
+    rdfs:label "CONCRETE" ;
+    rdfs:comment "Hard, compact, unprocessed, fibrous cellulose substance. The roots, trunks and branches of trees and shrubs consist of this tissue." ;
+    rdfs:subClassOf midas-materials:SAND ;
+    ifc-presentation:diffuseColor [
+        ifc-presentation:Red 0.5 ;
+        ifc-presentation:Green 0.5 ;
+        ifc-presentation:Blue 0.5 ;
+    ] ;
+    ifc-presentation:opacity 1 .
+
+midas-materials:WOOD 
+    a ifc:IfcMaterial ;
+    rdfs:label "WOOD" ;
+    rdfs:comment "Hard, compact, unprocessed, fibrous cellulose substance. The roots, trunks and branches of trees and shrubs consist of this tissue." ;
+    rdfs:subClassOf midas-materials:TIMBER ;
+    ifc-presentation:diffuseColor [
+        ifc-presentation:Red 0.8 ;
+        ifc-presentation:Green 0.7 ;
+        ifc-presentation:Blue 0.6 ;
+    ] ;
+    ifc-mat:StrengthClass "C24" ;
+    ifc-mat:MoistureContent 0.56 ;
+    ifc-mat:MassDensity 529.0 ;
+    ifc-prop:GWP [
+        ifc-mat:A1-A3 -629.4 ;
+        ifc-mat:A4 0 ;
+        ifc-mat:A5 0 ;
+        ifc-mat:C2 1.802 ;
+        ifc-mat:C3 863 ;
+        ifc-mat:D -274.8 ;
+    ] .
+    
+midas-materials:GLASS 
+    a ifc:IfcMaterial ;
+    rdfs:label "GLASS" ;
+    rdfs:comment "Transparent, hard substance made by fusing soda-silica which solidifies from a molten state." ;
+    rdfs:subClassOf midas-materials:MAN_MADE_MATERIAL ;
+    ifc-presentation:diffuseColor [
+        ifc-presentation:Red 0.5 ;
+        ifc-presentation:Green 0.8 ;
+        ifc-presentation:Blue 0.6 ;
+    ] ;
+    ifc-presentation:opacity 0.3 .
