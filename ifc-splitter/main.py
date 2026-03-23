@@ -134,7 +134,7 @@ def main():
 
     # Save combined RDF
     data_path = os.path.join(output_dir, "data.ttl")
-    combined_graph.bind("inst", f"https://raswaternet.github.io/IfcMaterialEnrichment/models/{model_slug}/")
+    combined_graph.bind("inst", f"https://raswaternet.github.io/IfcMaterialEnrichment/models/{model_slug}/data.ttl#")
     combined_graph.serialize(destination=data_path, format="turtle")
     print(f"\nSemantic data saved: {data_path}")
     print(f"  Total triples: {len(combined_graph)}")

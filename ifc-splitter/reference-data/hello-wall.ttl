@@ -1,4 +1,4 @@
-@prefix ex: <https://data.example.org/filename.ifc#> .
+@prefix inst: <https://raswaternet.github.io/IfcMaterialEnrichment/models/hello-wall/data.ttl#> .
 @prefix ifc: <https://standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx#> .
 @prefix ifc-mat: <https://standards.buildingsmart.org/ifc/ifc-mat/ifc-mat@v1.0.0.ifcx#> .
 @prefix ifc-prop: <https://standards.buildingsmart.org/ifc/core/prop@v5a.ifcx#> .
@@ -10,7 +10,7 @@
 
 # Instance data
 ## Wall
-ex:93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b a ifc:IfcWall ;
+inst:93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b a ifc:IfcWall ;
     ifc-prop:IsExternal true ;
     ifc-prop:Volume 2.783999976 ;
     ifc-prop:Height 3.0 ;
@@ -18,7 +18,7 @@ ex:93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b a ifc:IfcWall ;
     ifc:material midas-materials:CONCRETE .
 
 ## Window 
-ex:2c2d549f-f9fe-4e22-8590-562fda81a690
+inst:2c2d549f-f9fe-4e22-8590-562fda81a690
     a ifc:IfcWindow ;
     ifc-prop:IsExternal true ;
     ifc-prop:Volume 0.025999999592 ;    # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
@@ -33,7 +33,7 @@ ex:2c2d549f-f9fe-4e22-8590-562fda81a690
     ] .
 
 ## Window_001
-ex:592504dc-469a-44d6-9ae8-c801b591679b
+inst:592504dc-469a-44d6-9ae8-c801b591679b
     a ifc:IfcWindow ;
     ifc-prop:IsExternal true ; 
     ifc-prop:Volume 0.025999999592 ;    # inherited from windowType 25503984-6605-43a1-8597-eae657ff5bea
