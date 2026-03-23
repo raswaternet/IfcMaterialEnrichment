@@ -29,7 +29,6 @@ export function ClassificationPanel() {
   useEffect(() => {
     if (!fragmentsManager?.fragments || demoLoaded) return;
     
-    console.log('[ClassificationPanel] Loading demo classifications...');
     classifier.loadFromUrl('/classifications-demo.json');
     setDemoLoaded(true);
   }, [fragmentsManager?.fragments, classifier, demoLoaded]);
@@ -67,22 +66,11 @@ export function ClassificationPanel() {
 
   // Add current selection to label
   const handleAddToLabel = async (label: string) => {
-    console.log('[ClassificationPanel] Add to label clicked:', label);
-    console.log('[ClassificationPanel] Current selection:', selection);
-    console.log('[ClassificationPanel] Selection keys:', selection ? Object.keys(selection) : 'null');
-    
     if (!selection || Object.keys(selection).length === 0) {
-      console.warn('[ClassificationPanel] No selection to add');
       return;
     }
-    
-    // Log each model and its IDs
-    for (const [modelId, ids] of Object.entries(selection)) {
-      console.log(`[ClassificationPanel] Model ${modelId}: ${ids.size} items`);
-    }
-    
+
     await classifier.addSelectionToLabel(label, selection);
-    console.log(`[ClassificationPanel] Added ${selectionInfo?.totalCount || 0} items to label: ${label}`);
     
     // Force re-render of tree to show updated counts
     const count = await classifier.getLabelCountInFragments(label);
@@ -104,7 +92,6 @@ export function ClassificationPanel() {
     // Clear current selection and highlight new items
     highlighter.clear();
     highlighter.highlightByID('select', items, true);
-    console.log(`Replaced selection with items from label: ${label}`);
   };
 
   // Add items from label to current selection
@@ -119,7 +106,6 @@ export function ClassificationPanel() {
 
     // Add to existing selection (don't replace)
     highlighter.highlightByID('select', items, false);
-    console.log(`Added items from label to selection: ${label}`);
   };
 
   // Subtract items from label from current selection
@@ -150,18 +136,15 @@ export function ClassificationPanel() {
       highlighter.highlightByID('select', newSelection, true);
     }
     
-    console.log(`Subtracted items from label: ${label}`);
   };
 
   // Remove current selection from label
   const handleRemoveFromLabel = async (label: string) => {
     if (!selection || Object.keys(selection).length === 0) {
-      console.warn('[ClassificationPanel] No selection to remove');
       return;
     }
-    
+
     await classifier.removeSelectionFromLabel(label, selection);
-    console.log(`Removed ${selectionInfo?.totalCount || 0} items from label: ${label}`);
     
     // Force re-render of tree to show updated counts
     const count = await classifier.getLabelCountInFragments(label);

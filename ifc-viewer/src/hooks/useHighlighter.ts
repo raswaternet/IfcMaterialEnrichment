@@ -61,9 +61,6 @@ export function useHighlighter(viewerCore: ViewerCore | null): UseHighlighterRet
 
     const currentSelection = highlighterRef.current.selection.select as Record<string, Set<number>> | undefined;
 
-    console.log('[useHighlighter] Updating selection:', currentSelection);
-    console.log('[useHighlighter] Selection keys:', currentSelection ? Object.keys(currentSelection) : 'none');
-
     if (!currentSelection || Object.keys(currentSelection).length === 0) {
       setSelection(null);
       setSelectionInfo(null);
@@ -80,36 +77,30 @@ export function useHighlighter(viewerCore: ViewerCore | null): UseHighlighterRet
 
     const init = async () => {
       try {
-        console.log('[useHighlighter] Initializing highlighter...');
         const { components, world } = viewerCore;
 
         // Initialize Raycasters first (required for Highlighter)
         const raycasters = components.get(OBC.Raycasters);
         raycasters.get(world);
-        console.log('[useHighlighter] Raycasters initialized');
 
         // Get Highlighter
         const highlighter = components.get(OBF.Highlighter);
         await highlighter.setup({ world });
-        console.log('[useHighlighter] Highlighter setup complete');
-        
+
         // Ensure highlighter is fully configured before exposing it
         highlighterRef.current = highlighter;
 
         // Listen for selection events
         highlighter.events.select.onHighlight.add(() => {
-          console.log('[useHighlighter] Selection changed');
           updateSelectionFromHighlighter();
         });
 
         highlighter.events.select.onClear.add(() => {
-          console.log('[useHighlighter] Selection cleared');
           setSelection(null);
           setSelectionInfo(null);
         });
 
         initializedRef.current = true;
-        console.log('[useHighlighter] Initialization complete, highlighter ready');
       } catch (err) {
         console.error('[useHighlighter] Error initializing highlighter:', err);
       }

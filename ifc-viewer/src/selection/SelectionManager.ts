@@ -260,16 +260,12 @@ export class SelectionManager {
       if (e.button !== 0) return;
 
       const modifier = resolveModifier(e);
-      console.log('[SelectionManager] pointerUp:', { isDragging: this.isDragging, modifier, altKey: e.altKey, ctrlKey: e.ctrlKey, metaKey: e.metaKey, shiftKey: e.shiftKey });
 
       if (!this.isDragging) {
         // Only intercept Shift (toggle) and Alt (subtract)
         // Ctrl (add) and plain click (replace) are handled by Highlighter's autoHighlightOnClick
         if (modifier === 'toggle' || modifier === 'subtract') {
-          console.log('[SelectionManager] Intercepting for custom modifier:', modifier);
           this.opts.onClickSelect(modifier);
-        } else {
-          console.log('[SelectionManager] Letting ThatOpen handle:', modifier);
         }
         return;
       }

@@ -81,102 +81,78 @@ export function useClassifier(
       const blob = new Blob([text], { type: 'application/json' });
       const file = new File([blob], 'classifications.json', { type: 'application/json' });
       await Classification.loadClassificationsFromFile(file);
-      console.log('[useClassifier] Loaded classifications from URL:', url);
     } catch (error) {
       console.error('[useClassifier] Failed to load classifications from URL:', error);
     }
   }, []);
 
   const addSelectionToLabel = useCallback(async (label: string, selection: SelectionMap) => {
-    console.log('[useClassifier] addSelectionToLabel called:', { label, selection });
-    
     if (!fragmentsManager) {
-      console.warn('[useClassifier] No fragmentsManager');
       return;
     }
-    
+
     const labelSet = Classification.getStore().get(label);
     if (!labelSet) {
       // Create new label if it doesn't exist
-      console.log('[useClassifier] Creating new label:', label);
       Classification.getStore().set(label, new Set());
     }
 
     // Get GUIDs from selection
-    let guidCount = 0;
     for (const [modelId, localIds] of Object.entries(selection)) {
-      console.log(`[useClassifier] Processing model ${modelId} with ${localIds.size} items`);
       const model = fragmentsManager.list.get(modelId);
       if (!model) {
-        console.warn(`[useClassifier] Model not found: ${modelId}`);
         continue;
       }
 
       const items = await model.getItemsData([...localIds]);
-      console.log(`[useClassifier] Got ${items.length} items data`);
-      
+
       for (const item of items) {
         // Use _guid property (with underscore)
         const guidProp = item._guid;
-        
+
         if (guidProp && typeof guidProp === 'object' && 'value' in guidProp) {
           const guid = guidProp.value;
           if (typeof guid === "string") {
             Classification.getStore().get(label)!.add(guid);
-            guidCount++;
-            if (guidCount <= 3) {
-              console.log(`[useClassifier] Added GUID: ${guid}`);
-            }
           }
         }
       }
     }
-
-    console.log(`[useClassifier] Total GUIDs added: ${guidCount}`);
 
     // Trigger update
     setStore(new Map(Classification.getStore()));
   }, [fragmentsManager]);
 
   const removeSelectionFromLabel = useCallback(async (label: string, selection: SelectionMap) => {
-    console.log('[useClassifier] removeSelectionFromLabel called:', { label, selection });
-    
     if (!fragmentsManager) {
-      console.warn('[useClassifier] No fragmentsManager');
       return;
     }
-    
+
     const labelSet = Classification.getStore().get(label);
     if (!labelSet) {
-      console.warn('[useClassifier] Label not found:', label);
       return;
     }
 
     // Get GUIDs from selection and remove them
-    let guidCount = 0;
     for (const [modelId, localIds] of Object.entries(selection)) {
       const model = fragmentsManager.list.get(modelId);
       if (!model) {
-        console.warn(`[useClassifier] Model not found: ${modelId}`);
         continue;
       }
 
       const items = await model.getItemsData([...localIds]);
-      
+
       for (const item of items) {
         const guidProp = item._guid;
-        
+
         if (guidProp && typeof guidProp === 'object' && 'value' in guidProp) {
           const guid = guidProp.value;
           if (typeof guid === "string" && labelSet.has(guid)) {
             labelSet.delete(guid);
-            guidCount++;
           }
         }
       }
     }
-
-    console.log(`[useClassifier] Total GUIDs removed: ${guidCount}`);
 
     // Trigger update
     setStore(new Map(Classification.getStore()));

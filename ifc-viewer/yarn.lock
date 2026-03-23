@@ -639,6 +639,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mapbox/point-geometry@npm:~1.1.0":
+  version: 1.1.0
+  resolution: "@mapbox/point-geometry@npm:1.1.0"
+  checksum: 10c0/fe43d00a92592a28835090722df771be50182ff5fc40705cbd571534e2397beef884a97f701869b4a99a61289700cf709f588883f4b085c034bbe722cf17155d
+  languageName: node
+  linkType: hard
+
+"@mapbox/vector-tile@npm:*, @mapbox/vector-tile@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@mapbox/vector-tile@npm:2.0.4"
+  dependencies:
+    "@mapbox/point-geometry": "npm:~1.1.0"
+    "@types/geojson": "npm:^7946.0.16"
+    pbf: "npm:^4.0.1"
+  checksum: 10c0/3cade1c8c3a4e0896bbe8ee1d6bcdb78cb34dc2257bc0151ba85d06f2cb96c87b5bddfd28f8b8a20131a85aa26af7091965da19ac356bf126eb66e20d48542fa
+  languageName: node
+  linkType: hard
+
 "@npmcli/agent@npm:^4.0.0":
   version: 4.0.0
   resolution: "@npmcli/agent@npm:4.0.0"
@@ -1195,10 +1213,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/geojson@npm:^7946.0.16":
+  version: 7946.0.16
+  resolution: "@types/geojson@npm:7946.0.16"
+  checksum: 10c0/1ff24a288bd5860b766b073ead337d31d73bdc715e5b50a2cee5cb0af57a1ed02cc04ef295f5fa68dc40fe3e4f104dd31282b2b818a5ba3231bc1001ba084e3c
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.15":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
+  languageName: node
+  linkType: hard
+
+"@types/mapbox__vector-tile@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@types/mapbox__vector-tile@npm:2.0.0"
+  dependencies:
+    "@mapbox/vector-tile": "npm:*"
+  checksum: 10c0/01b377c5c22090303093d2df999e953fa5f822276e9e4d17934205c89b5d0e69e26ad03c2891659c7b58522432ed14eec5bf2747b7974577b3b5a63ae56ee729
   languageName: node
   linkType: hard
 
@@ -1208,6 +1242,13 @@ __metadata:
   dependencies:
     undici-types: "npm:~7.16.0"
   checksum: 10c0/8b31c0af5b5474f13048a4e77c57f22cd4f8fe6e58c4b6fde9456b0c13f46a5bfaf5744ff88fd089581de9f0d6e99c584e022681de7acb26a58d258c654c4843
+  languageName: node
+  linkType: hard
+
+"@types/pbf@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "@types/pbf@npm:3.0.5"
+  checksum: 10c0/c32348c6c81e6c31fe4a1f59983e3a9904727b809fb1e5ddec4fad49abaf93070ec26ee0c04c6516536c181c945b3c7d9e226549eaac3b2e12cb7b57f549a49c
   languageName: node
   linkType: hard
 
@@ -2720,6 +2761,7 @@ __metadata:
     "@eslint/js": "npm:^9.36.0"
     "@mantine/core": "npm:^8.3.15"
     "@mantine/hooks": "npm:^8.3.15"
+    "@mapbox/vector-tile": "npm:^2.0.4"
     "@tabler/icons-react": "npm:^3.37.1"
     "@testing-library/dom": "npm:^10.4.1"
     "@testing-library/jest-dom": "npm:^6.9.1"
@@ -2729,7 +2771,9 @@ __metadata:
     "@thatopen/components-front": "npm:^3.3.1"
     "@thatopen/fragments": "npm:^3.3.0"
     "@thatopen/ui": "npm:^3.3.3"
+    "@types/mapbox__vector-tile": "npm:^2.0.0"
     "@types/node": "npm:^24.6.0"
+    "@types/pbf": "npm:^3.0.5"
     "@types/react": "npm:^19.1.16"
     "@types/react-dom": "npm:^19.1.9"
     "@types/stats.js": "npm:^0.17.4"
@@ -2742,9 +2786,11 @@ __metadata:
     eslint-plugin-react-refresh: "npm:^0.4.22"
     globals: "npm:^16.4.0"
     jsdom: "npm:^25.0.0"
+    pbf: "npm:^4.0.1"
     postcss: "npm:^8.5.6"
     postcss-preset-mantine: "npm:^1.18.0"
     postcss-simple-vars: "npm:^7.0.1"
+    proj4: "npm:^2.20.4"
     react: "npm:^19.1.1"
     react-dom: "npm:^19.1.1"
     stats.js: "npm:^0.17.0"
@@ -3193,6 +3239,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mgrs@npm:1.0.0":
+  version: 1.0.0
+  resolution: "mgrs@npm:1.0.0"
+  checksum: 10c0/a360853be5a3b4f4734dbf0a193851c08039ccb6077362ab0f890cccd170ef88b59585129757da9fea4d7a313d7dc3ee88f37f594fc1ae3e4e8efc5353144d77
+  languageName: node
+  linkType: hard
+
 "mime-db@npm:1.52.0":
   version: 1.52.0
   resolution: "mime-db@npm:1.52.0"
@@ -3513,6 +3566,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pbf@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "pbf@npm:4.0.1"
+  dependencies:
+    resolve-protobuf-schema: "npm:^2.1.0"
+  bin:
+    pbf: bin/pbf
+  checksum: 10c0/1a95cc3bdc61ee01d4728f4a57a9f1233732d183a8568818b714a747fd8b957d99b63e1c67f0f72dc5623657c42f88a1a7e44e1fbcd06e2fe2ef9a85a964832e
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:1.1.1, picocolors@npm:^1.1.1":
   version: 1.1.1
   resolution: "picocolors@npm:1.1.1"
@@ -3634,6 +3698,23 @@ __metadata:
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
   checksum: 10c0/bec089239487833d46b59d80327a1605e1c5287eaad770a291add7f45fda1bb5e28b38e0e061add0a1d0ee0984788ce74fa394d345eed1c420cacf392c554367
+  languageName: node
+  linkType: hard
+
+"proj4@npm:^2.20.4":
+  version: 2.20.4
+  resolution: "proj4@npm:2.20.4"
+  dependencies:
+    mgrs: "npm:1.0.0"
+    wkt-parser: "npm:^1.5.3"
+  checksum: 10c0/bb83915ae7973068f02ca440099faca7efd6b1add3cd2903fe8ce816f4d589bd72ac77c9a882d3d60c7beff2cb9d9fb38924590978a87a7165156cb120c8328c
+  languageName: node
+  linkType: hard
+
+"protocol-buffers-schema@npm:^3.3.1":
+  version: 3.6.0
+  resolution: "protocol-buffers-schema@npm:3.6.0"
+  checksum: 10c0/23a08612e5cc903f917ae3b680216ccaf2d889c61daa68d224237f455182fa96fff16872ac94b1954b5dd26fc7e8ce7e9360c54d54ea26218d107b2f059fca37
   languageName: node
   linkType: hard
 
@@ -3783,6 +3864,15 @@ __metadata:
   version: 4.0.0
   resolution: "resolve-from@npm:4.0.0"
   checksum: 10c0/8408eec31a3112ef96e3746c37be7d64020cda07c03a920f5024e77290a218ea758b26ca9529fd7b1ad283947f34b2291c1c0f6aa0ed34acfdda9c6014c8d190
+  languageName: node
+  linkType: hard
+
+"resolve-protobuf-schema@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "resolve-protobuf-schema@npm:2.1.0"
+  dependencies:
+    protocol-buffers-schema: "npm:^3.3.1"
+  checksum: 10c0/8e656b9072b1c001952f851251413bc79d8c771c3015f607b75e1ca3b8bd7c4396068dd19cdbb3019affa03f6457d2c0fd38d981ffd714215cd2e7c2b67221a7
   languageName: node
   linkType: hard
 
@@ -4630,6 +4720,13 @@ __metadata:
   bin:
     why-is-node-running: cli.js
   checksum: 10c0/1cde0b01b827d2cf4cb11db962f3958b9175d5d9e7ac7361d1a7b0e2dc6069a263e69118bd974c4f6d0a890ef4eedfe34cf3d5167ec14203dbc9a18620537054
+  languageName: node
+  linkType: hard
+
+"wkt-parser@npm:^1.5.3":
+  version: 1.5.4
+  resolution: "wkt-parser@npm:1.5.4"
+  checksum: 10c0/70d85e2a4abea83c94021ffc5e11a8d25e9b70b0989d762c470a57600a4ee930d537366b608b26f3fba7f371c4e6d8d814a074831e7cc2914efa4e3cbddc8913
   languageName: node
   linkType: hard
 

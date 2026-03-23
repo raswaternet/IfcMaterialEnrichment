@@ -3,6 +3,7 @@ import type * as OBC from '@thatopen/components';
 import type * as OBF from '@thatopen/components-front';
 import type { UseFragmentsManagerReturn } from '../hooks/useFragmentsManager';
 import type { SelectionInfo } from '../types/viewer.types';
+import type { UseBGTGroundPlaneReturn } from '../hooks/useBGTGroundPlane';
 
 /**
  * Viewer context value - shared ThatOpen instances and hook returns
@@ -15,6 +16,7 @@ export interface ViewerContextValue {
   highlighter: OBF.Highlighter | null;
   selection: Record<string, Set<number>> | null;
   selectionInfo: SelectionInfo | null;
+  groundPlane: UseBGTGroundPlaneReturn | null;
 }
 
 /**
@@ -28,6 +30,7 @@ export const ViewerContext = createContext<ViewerContextValue>({
   highlighter: null,
   selection: null,
   selectionInfo: null,
+  groundPlane: null,
 });
 
 /**

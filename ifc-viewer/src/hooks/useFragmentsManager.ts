@@ -2,6 +2,8 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import * as OBC from '@thatopen/components';
 import * as THREE from 'three';
 import type { ViewerCore, ModelInfo } from '../types/viewer.types';
+import { loadMapConversion, applyGeoTransform } from '../utils/georeferencing';
+import { SCENE_ORIGIN_EPSG28992 } from '../config/scene';
 
 export interface UseFragmentsManagerOptions {
   wasmPath?: string;
@@ -58,28 +60,26 @@ export function useFragmentsManager(
   const [loadingProgress, setLoadingProgress] = useState<LoadingProgress | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isInitialized, setIsInitialized] = useState(false);
-  
+
   const fragmentsRef = useRef<OBC.FragmentsManager | null>(null);
   const ifcLoaderRef = useRef<OBC.IfcLoader | null>(null);
   const initializedRef = useRef(false);
   const workerBlobUrlRef = useRef<string | null>(null);
 
+  // Track scene origin in EPSG:28992 - set by first model or config
+  const sceneOriginRef = useRef<{ eastings: number; northings: number; height: number } | null>(
+    SCENE_ORIGIN_EPSG28992
+  );
+
   // Initialize FragmentsManager and IfcLoader
   useEffect(() => {
-    console.log('[useFragmentsManager] Init check:', {
-      hasViewerCore: !!viewerCore,
-      alreadyInitialized: initializedRef.current,
-    });
-
     if (!viewerCore || initializedRef.current) return;
 
     const init = async () => {
       try {
-        console.log('[useFragmentsManager] Starting initialization...');
         const { components, world } = viewerCore;
 
         // Fetch worker from CDN and create blob URL to avoid CORS issues
-        console.log('[useFragmentsManager] Fetching worker from:', workerUrl);
         const workerResponse = await fetch(workerUrl);
         if (!workerResponse.ok) {
           throw new Error(`Failed to fetch worker: ${workerResponse.status}`);
@@ -88,17 +88,14 @@ export function useFragmentsManager(
         const workerFile = new File([workerBlob], 'worker.mjs', { type: 'text/javascript' });
         const workerBlobUrl = URL.createObjectURL(workerFile);
         workerBlobUrlRef.current = workerBlobUrl;
-        console.log('[useFragmentsManager] Worker blob URL created');
 
         // Get FragmentsManager
         const fragments = components.get(OBC.FragmentsManager);
         fragments.init(workerBlobUrl);
         fragmentsRef.current = fragments;
-        console.log('[useFragmentsManager] FragmentsManager initialized');
 
         // Get IfcLoader
         const ifcLoader = components.get(OBC.IfcLoader);
-        console.log('[useFragmentsManager] Setting up IFC loader...');
         await ifcLoader.setup({
           autoSetWasm: false,
           wasm: {
@@ -107,7 +104,6 @@ export function useFragmentsManager(
           },
         });
         ifcLoaderRef.current = ifcLoader;
-        console.log('[useFragmentsManager] IFC loader setup complete');
 
         // Listen for new models being added
         fragments.list.onItemSet.add(({ key: modelId, value: model }) => {
@@ -140,7 +136,6 @@ export function useFragmentsManager(
 
         initializedRef.current = true;
         setIsInitialized(true);
-        console.log('[useFragmentsManager] Initialization complete');
       } catch (err) {
         console.error('Error initializing fragments manager:', err);
         setError(err instanceof Error ? err.message : 'Failed to initialize');
@@ -179,15 +174,7 @@ export function useFragmentsManager(
       const buffer = await file.arrayBuffer();
       const uint8Array = new Uint8Array(buffer);
       
-      await ifcLoaderRef.current.load(uint8Array, false, file.name, {
-        processData: {
-          progressCallback: (progress) => {
-            console.log(`Loading ${file.name}: ${progress}%`);
-          },
-        },
-      });
-
-      console.log(`Successfully loaded IFC model: ${file.name}`);
+      await ifcLoaderRef.current.load(uint8Array, false, file.name);
     } catch (err) {
       console.error(`Error loading ${file.name}:`, err);
       setError(err instanceof Error ? err.message : 'Failed to load IFC file');
@@ -218,15 +205,7 @@ export function useFragmentsManager(
       const buffer = await response.arrayBuffer();
       const uint8Array = new Uint8Array(buffer);
 
-      await ifcLoaderRef.current.load(uint8Array, false, fileName, {
-        processData: {
-          progressCallback: (progress) => {
-            console.log(`Loading ${fileName}: ${progress}%`);
-          },
-        },
-      });
-
-      console.log(`Successfully loaded IFC model: ${fileName}`);
+      await ifcLoaderRef.current.load(uint8Array, false, fileName);
     } catch (err) {
       console.error(`Error loading ${fileName}:`, err);
       setError(err instanceof Error ? err.message : 'Failed to load IFC file from URL');
@@ -273,15 +252,8 @@ export function useFragmentsManager(
           const buffer = await response.arrayBuffer();
           const uint8Array = new Uint8Array(buffer);
 
-          await ifcLoaderRef.current.load(uint8Array, false, fileName, {
-            processData: {
-              progressCallback: (progress) => {
-                console.log(`Loading ${fileName}: ${progress}%`);
-              },
-            },
-          });
+          await ifcLoaderRef.current.load(uint8Array, false, fileName);
 
-          console.log(`Successfully loaded: ${fileName}`);
           successCount++;
         } catch (err) {
           console.warn(`Error loading ${fileName}:`, err);
@@ -326,7 +298,6 @@ export function useFragmentsManager(
       await fragmentsRef.current.core.load(uint8Array, {
         modelId: file.name,
       });
-      console.log(`Successfully loaded fragment: ${file.name}`);
     } catch (err) {
       console.error(`Error loading fragment ${file.name}:`, err);
       setError(err instanceof Error ? err.message : 'Failed to load fragment file');
@@ -337,10 +308,10 @@ export function useFragmentsManager(
   }, []);
 
   /**
-   * Load fragment file from URL
+   * Load fragment file from URL with georeferencing support
    */
   const loadFragmentFromUrl = useCallback(async (url: string, fileName: string) => {
-    if (!fragmentsRef.current) {
+    if (!fragmentsRef.current || !viewerCore) {
       setError('Fragments manager not initialized');
       return;
     }
@@ -349,6 +320,19 @@ export function useFragmentsManager(
     setError(null);
 
     try {
+      // Load map conversion metadata
+      const mapConversion = await loadMapConversion(fileName);
+
+      // Set scene origin from first model if not configured
+      if (mapConversion && !sceneOriginRef.current) {
+        sceneOriginRef.current = {
+          eastings: mapConversion.eastings,
+          northings: mapConversion.northings,
+          height: mapConversion.orthogonalHeight,
+        };
+      }
+
+      // Load fragment
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -360,7 +344,15 @@ export function useFragmentsManager(
       await fragmentsRef.current.core.load(uint8Array, {
         modelId: fileName,
       });
-      console.log(`Successfully loaded fragment: ${fileName}`);
+
+      // Apply georeferencing transformation if we have mapconversion data
+      if (mapConversion && sceneOriginRef.current) {
+        const model = fragmentsRef.current.list.get(fileName);
+        if (model) {
+          applyGeoTransform(model.object, mapConversion, sceneOriginRef.current);
+        }
+      }
+
     } catch (err) {
       console.error(`Error loading fragment ${fileName}:`, err);
       setError(err instanceof Error ? err.message : 'Failed to load fragment from URL');
@@ -368,7 +360,7 @@ export function useFragmentsManager(
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [viewerCore]);
 
   /**
    * Clear all models

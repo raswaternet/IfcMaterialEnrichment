@@ -106,14 +106,11 @@ export function useSelection(
 
       // 3. Listen for Highlighter events to update React state
       highlighter.events.select.onHighlight.add(() => {
-        console.log('[useSelection] onHighlight fired by ThatOpen');
         const current = highlighter.selection.select as SelectionMap | undefined;
-        console.log('[useSelection] New selection:', current);
         publishSelection(current ?? null);
       });
 
       highlighter.events.select.onClear.add(() => {
-        console.log('[useSelection] onClear fired by ThatOpen');
         publishSelection(null);
       });
 
@@ -135,24 +132,19 @@ export function useSelection(
         },
 
         onClickSelect: async (clickModifier: SelectionModifier) => {
-          console.log('[useSelection] onClickSelect called with:', clickModifier);
           // Only called for Shift (toggle) and Alt (subtract)
           // Ctrl (add) and plain clicks (replace) are handled by Highlighter automatically
-          
+
           // 1. Snapshot current selection before raycasting
           const current = (highlighter.selection.select as SelectionMap) ?? {};
-          console.log('[useSelection] Current selection:', current);
-          
+
           // 2. Raycast to find what's under the cursor (ThatOpen's built-in raycasting)
           await highlighter.highlight('select', true, false); // removePrevious=true to get fresh pick
           const picked = (highlighter.selection.select as SelectionMap) ?? {};
-          console.log('[useSelection] Picked after highlight():', picked);
-          
+
           // 3. Apply modifier and commit (same pattern as rectangle selection)
           const merged = applyModifier(current, picked, clickModifier);
-          console.log('[useSelection] Merged result:', merged);
           await commitSelection(highlighter, merged);
-          console.log('[useSelection] Selection committed');
         },
 
         onSelectionCleared: () => {

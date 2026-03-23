@@ -1,5 +1,5 @@
 import type * as OBC from '@thatopen/components';
-import type { PostproductionRenderer } from '@thatopen/components-front';
+import type * as OBF from '@thatopen/components-front';
 
 /**
  * Selection map: modelId -> Set of localIds
@@ -36,7 +36,7 @@ export interface SelectionInfo {
 export interface ViewerCore {
   components: OBC.Components;
   world: OBC.World;
-  renderer: PostproductionRenderer;
+  renderer: OBF.PostproductionRenderer;
   camera: OBC.SimpleCamera;
 }
 

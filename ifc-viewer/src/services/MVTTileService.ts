@@ -14,7 +14,6 @@ import {
   getSceneOriginRD,
   BGT_OGC_API_URL,
   TILE_MATRIX_ORIGIN,
-
   BGT_ZOOM_LEVEL,
   MVT_EXTENT,
   TILE_GROUND_SIZE,

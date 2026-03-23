@@ -2,11 +2,14 @@
   "name": "ifc2frag",
   "version": "1.0.0",
   "type": "module",
-  "bin": {
-    "ifc2frag": "./cli.js"
+  "bin": "./cli.js",
+  "scripts": {
+    "convert": "node cli.js",
+    "convert:all": "node convert-all.js"
   },
   "dependencies": {
-    "@thatopen/fragments": "latest",
-    "web-ifc": "^0.0.75"
+    "@thatopen/fragments": "^3.3.6",
+    "three": "^0.183.2",
+    "web-ifc": "0.0.74"
   }
 }

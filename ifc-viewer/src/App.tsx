@@ -2,15 +2,19 @@ import '@mantine/core/styles.css';
 import { MantineProvider, AppShell, Burger, Group, Title, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useRef, useEffect } from 'react';
+import * as THREE from 'three';
 import { Toolbar } from './components/Toolbar';
 import { LoadingOverlay } from './components/LoadingOverlay';
 import { ViewerCanvas } from './components/ViewerCanvas';
 import { ClassificationPanel } from './components/ClassificationPanel';
 import { ViewerProvider } from './contexts/ViewerContext';
+import * as OBC from '@thatopen/components';
 import { useViewerCore } from './hooks/useViewerCore';
 import { useFragmentsManager } from './hooks/useFragmentsManager';
 import { useSelection } from './hooks/useSelection';
+import { useBGTGroundPlane } from './hooks/useBGTGroundPlane';
 import { FRAGMENTS_BASE_PATH } from './constants/models';
+import { AVAILABLE_MODELS } from './config/scene';
 
 export default function App() {
   const [opened, { toggle }] = useDisclosure();
@@ -20,62 +24,63 @@ export default function App() {
   const viewerCore = useViewerCore(containerRef);
   const fragmentsManager = useFragmentsManager(viewerCore);
   const { highlighter, selection, selectionInfo } = useSelection(viewerCore);
+  
+  const groundPlane = useBGTGroundPlane(viewerCore?.world ?? null);
 
-  // Auto-load 3DBAG and BGT models on startup
+  // Auto-load fragment model on startup
   useEffect(() => {
-    console.log('[App] Auto-load check:', {
-      hasFragments: !!fragmentsManager.fragments,
-      modelsCount: fragmentsManager.models.length,
-      isLoading: fragmentsManager.isLoading,
-    });
-
-    if (!fragmentsManager.fragments) {
-      console.log('[App] Skipping: fragments not ready');
-      return; // Skip if not ready
-    }
-
-    if (fragmentsManager.models.length > 0) {
-      console.log('[App] Skipping: models already loaded');
-      return; // Skip if models already loaded
-    }
-
-    if (fragmentsManager.isLoading) {
-      console.log('[App] Skipping: already loading');
-      return; // Skip if already loading
-    }
-
-    console.log('[App] Starting auto-load of fragment model');
+    if (!fragmentsManager.fragments) return;
+    if (fragmentsManager.models.length > 0) return;
+    if (fragmentsManager.isLoading) return;
 
     const autoLoadModels = async () => {
-      const fileName = 'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.frag';
-      const fragmentUrl = `${FRAGMENTS_BASE_PATH}/${encodeURIComponent(fileName)}`;
-      
-      console.log('[App] Loading fragment from:', fragmentUrl);
-      await fragmentsManager.loadFragmentFromUrl(fragmentUrl, fileName);
-      console.log('[App] Fragment load complete');
-      
-      // Set camera orbit point to model center after loading
+      // Load first model from configuration
+      const firstModel = AVAILABLE_MODELS[0];
+      if (!firstModel) return;
+
+      const fragmentUrl = `${FRAGMENTS_BASE_PATH}/${encodeURIComponent(firstModel.fileName)}`;
+      await fragmentsManager.loadFragmentFromUrl(fragmentUrl, firstModel.fileName);
+
       if (viewerCore && fragmentsManager.models.length > 0) {
-        console.log('[App] Setting camera orbit to models center');
         await viewerCore.camera.setOrbitToItems();
       }
     };
 
     autoLoadModels();
   }, [fragmentsManager.fragments, fragmentsManager.models.length, fragmentsManager.isLoading, fragmentsManager.loadFragmentFromUrl, viewerCore]);
-  // Update camera orbit point whenever models change (e.g., manual loading)
+
+  // Update camera orbit and boundary whenever models change
   useEffect(() => {
     if (!viewerCore || fragmentsManager.models.length === 0 || fragmentsManager.isLoading) {
       return;
     }
 
-    console.log('[App] Models changed, updating camera orbit point');
-    const updateOrbitPoint = async () => {
-      await viewerCore.camera.setOrbitToItems();
-      console.log('[App] Camera orbit point updated to models center');
-    };
+    const controls = viewerCore.camera.controls;
+    const fragments = fragmentsManager.fragments;
 
-    updateOrbitPoint();
+    // Use BoundingBoxer to compute combined bbox (same as setOrbitToItems internally)
+    const boxer = viewerCore.components.get(OBC.BoundingBoxer);
+    boxer.list.clear();
+    if (fragments) {
+      for (const [, model] of fragments.list) {
+        boxer.list.add((model as any).box);
+      }
+    }
+    const bbox = boxer.get();
+    boxer.list.clear();
+
+    if (!bbox.isEmpty()) {
+      const size = bbox.getSize(new THREE.Vector3());
+
+      // Expand boundary so user can orbit freely around the model
+      const expanded = bbox.clone().expandByScalar(size.length() * 0.5);
+      expanded.min.y = Math.max(expanded.min.y, 0);
+
+      controls.setBoundary(expanded);
+      controls.boundaryEnclosesCamera = false;
+    }
+
+    viewerCore.camera.setOrbitToItems();
   }, [viewerCore, fragmentsManager.models.length, fragmentsManager.isLoading]);
   return (
     <MantineProvider>
@@ -88,6 +93,7 @@ export default function App() {
           highlighter,
           selection,
           selectionInfo,
+          groundPlane,
         }}
       >
         <AppShell
