@@ -1,0 +1,31 @@
+services:
+  backend:
+    build: ./backend
+    container_name: hackathon-backend
+    restart: unless-stopped
+    environment:
+      UPLOAD_DIR: /app/uploads
+    volumes:
+      - upload_data:/app/uploads
+    expose:
+      - "8000"
+
+  frontend:
+    build: ./frontend
+    container_name: hackathon-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    expose:
+      - "80"
+    networks:
+      - default
+      - web
+
+volumes:
+  upload_data:
+
+networks:
+  web:
+    external: true
+    name: gym-counter_web
