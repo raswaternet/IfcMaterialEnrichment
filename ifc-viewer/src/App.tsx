@@ -13,8 +13,7 @@ import { useViewerCore } from './hooks/useViewerCore';
 import { useFragmentsManager } from './hooks/useFragmentsManager';
 import { useSelection } from './hooks/useSelection';
 import { useBGTGroundPlane } from './hooks/useBGTGroundPlane';
-import { FRAGMENTS_BASE_PATH } from './constants/models';
-import { AVAILABLE_MODELS } from './config/scene';
+import { KNOWN_MODELS, getModelPaths } from './constants/models';
 
 export default function App() {
   const [opened, { toggle }] = useDisclosure();
@@ -35,11 +34,15 @@ export default function App() {
 
     const autoLoadModels = async () => {
       // Load first model from configuration
-      const firstModel = AVAILABLE_MODELS[0];
+      const firstModel = KNOWN_MODELS[0];
       if (!firstModel) return;
 
-      const fragmentUrl = `${FRAGMENTS_BASE_PATH}/${encodeURIComponent(firstModel.fileName)}`;
-      await fragmentsManager.loadFragmentFromUrl(fragmentUrl, firstModel.fileName);
+      const paths = getModelPaths(firstModel.slug);
+      await fragmentsManager.loadFragmentFromUrl(
+        paths.fragment,
+        firstModel.slug,
+        paths.mapConversion
+      );
 
       if (viewerCore && fragmentsManager.models.length > 0) {
         await viewerCore.camera.setOrbitToItems();

@@ -1,0 +1,10 @@
+{
+  "eastings": 116644.99999999993,
+  "northings": 488077.99999999953,
+  "orthogonalHeight": 1.3535839116229907e-16,
+  "xAxisAbscissa": 0.9686128429548345,
+  "xAxisOrdinate": -0.24857425543075248,
+  "scale": null,
+  "crsName": "EPSG:28992",
+  "description": "Netherlands, Amersfoort datum, New System"
+}

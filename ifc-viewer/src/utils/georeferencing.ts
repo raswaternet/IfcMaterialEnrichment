@@ -1,28 +1,35 @@
 import * as THREE from 'three';
 import type { MapConversion } from '../config/scene';
 
-const BASE_URL = import.meta.env.BASE_URL;
-const baseUrl = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
-const METADATA_BASE_PATH = `${baseUrl}models/model-properties`;
-
 /**
- * Load map conversion metadata for a fragment file
+ * Load map conversion metadata from a URL
  */
-export async function loadMapConversion(fragmentFileName: string): Promise<MapConversion | null> {
-  const metadataFileName = fragmentFileName.replace(/\.frag$/i, '-mapconversion.json');
-  const metadataUrl = `${METADATA_BASE_PATH}/${metadataFileName}`;
-
+export async function loadMapConversionFromUrl(url: string): Promise<MapConversion | null> {
   try {
-    const response = await fetch(metadataUrl);
+    const response = await fetch(url);
     if (!response.ok) {
-      console.warn(`Map conversion metadata not found for ${fragmentFileName}`);
+      console.warn(`Map conversion metadata not found: ${url}`);
       return null;
     }
     return await response.json();
   } catch (error) {
-    console.warn(`Failed to load map conversion for ${fragmentFileName}:`, error);
+    console.warn(`Failed to load map conversion from ${url}:`, error);
     return null;
   }
+}
+
+/**
+ * Load map conversion metadata for a fragment file (legacy path)
+ */
+export async function loadMapConversion(fragmentFileName: string): Promise<MapConversion | null> {
+  const BASE_URL = import.meta.env.BASE_URL;
+  const baseUrl = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
+  const METADATA_BASE_PATH = `${baseUrl}models/model-properties`;
+
+  const metadataFileName = fragmentFileName.replace(/\.frag$/i, '-mapconversion.json');
+  const metadataUrl = `${METADATA_BASE_PATH}/${metadataFileName}`;
+
+  return loadMapConversionFromUrl(metadataUrl);
 }
 
 /**
