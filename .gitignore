@@ -33,6 +33,3 @@ logs
 # AI tooling
 .claude
 IfcConvert
-
-# Large data files
-*.ttl
