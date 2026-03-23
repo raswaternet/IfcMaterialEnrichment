@@ -5,7 +5,7 @@
  * for a selected element in the viewer.
  */
 
-import { makeInstanceIri, INSTANCE_BASE } from "./ifcGuid";
+import { makeInstanceIri } from "./ifcGuid";
 
 // IFCX material namespace
 const IFC_MAT_NS = "https://standards.buildingsmart.org/ifc/ifc-mat/ifc-mat@v1.0.0.ifcx#";
