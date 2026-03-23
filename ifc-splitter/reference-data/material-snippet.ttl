@@ -1,0 +1,10 @@
+@prefix ex: <https://data.example.org/filename.ifc#> .
+@prefix ifc: <https://standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx#> . # bsi::ifc::
+@prefix ifc-prop: <https://standards.buildingsmart.org/ifc/core/prop@v5a.ifcx#> . # bsi::ifc::prop::
+@prefix ifc-mat: <https://standards.buildingsmart.org/ifc/ifc-mat/ifc-mat@v1.0.0.ifcx#> . # bsi::ifc-mat::prop::
+@prefix naakt: <https://identifier.buildingsmart.org/uri/nkt/naakt/2.4/class/> .
+
+
+ex:a28dcd95-d072-45d8-a96f-23b35f71d350 ifc:material naakt:beton_lichtbeton . # predicate based on IFC5, object based on naakt
+
+# this repeats for every object int he IFC

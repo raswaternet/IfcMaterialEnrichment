@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import * as OBC from '@thatopen/components';
 import * as THREE from 'three';
 import type { ViewerCore, ModelInfo } from '../types/viewer.types';
-import { loadMapConversion, applyGeoTransform } from '../utils/georeferencing';
+import { loadMapConversion, loadMapConversionFromUrl, applyGeoTransform } from '../utils/georeferencing';
 import { SCENE_ORIGIN_EPSG28992 } from '../config/scene';
 
 export interface UseFragmentsManagerOptions {
@@ -28,7 +28,7 @@ export interface UseFragmentsManagerReturn {
   loadIFCFromUrl: (url: string, fileName: string) => Promise<void>;
   loadMultipleFromUrls: (urls: Array<{ url: string; fileName: string }>) => Promise<void>;
   loadFragment: (file: File) => Promise<void>;
-  loadFragmentFromUrl: (url: string, fileName: string) => Promise<void>;
+  loadFragmentFromUrl: (url: string, fileName: string, mapConversionUrl?: string) => Promise<void>;
   clearAll: () => void;
   error: string | null;
 }
@@ -310,7 +310,7 @@ export function useFragmentsManager(
   /**
    * Load fragment file from URL with georeferencing support
    */
-  const loadFragmentFromUrl = useCallback(async (url: string, fileName: string) => {
+  const loadFragmentFromUrl = useCallback(async (url: string, fileName: string, mapConversionUrl?: string) => {
     if (!fragmentsRef.current || !viewerCore) {
       setError('Fragments manager not initialized');
       return;
@@ -320,8 +320,10 @@ export function useFragmentsManager(
     setError(null);
 
     try {
-      // Load map conversion metadata
-      const mapConversion = await loadMapConversion(fileName);
+      // Load map conversion metadata from explicit URL or legacy path
+      const mapConversion = mapConversionUrl
+        ? await loadMapConversionFromUrl(mapConversionUrl)
+        : await loadMapConversion(fileName);
 
       // Set scene origin from first model if not configured
       if (mapConversion && !sceneOriginRef.current) {

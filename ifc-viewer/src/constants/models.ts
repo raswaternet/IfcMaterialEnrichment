@@ -12,7 +12,25 @@ export const KNOWN_IFC_FILES = [
 ] as const;
 
 /**
- * Pre-converted fragment files for fast loading
+ * Model definition with all paths in the new folder structure
+ */
+export interface ModelDefinition {
+  slug: string;
+  name: string;
+}
+
+/**
+ * Known processed models in /models/{slug}/ structure
+ */
+export const KNOWN_MODELS: ModelDefinition[] = [
+  {
+    slug: 'zb1234_600_bim_mod_001_rg-jan-de-jonghstraat_detached',
+    name: 'Jan de Jonghstraat',
+  },
+];
+
+/**
+ * Pre-converted fragment files for fast loading (legacy)
  */
 export const KNOWN_FRAGMENT_FILES = [
   'ZB1234_600_BIM_MOD_001_RG Jan de Jonghstraat_detached.frag',
@@ -24,3 +42,16 @@ const BASE_URL = import.meta.env.BASE_URL;
 const baseUrl = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
 export const MODELS_BASE_PATH = `${baseUrl}models`;
 export const FRAGMENTS_BASE_PATH = `${baseUrl}models/model-geometry/fragments`;
+
+/**
+ * Get paths for a model in the new folder structure
+ */
+export function getModelPaths(slug: string) {
+  return {
+    fragment: `${MODELS_BASE_PATH}/${slug}/geometry.frag`,
+    mapConversion: `${MODELS_BASE_PATH}/${slug}/geometry-mapconversion.json`,
+    data: `${MODELS_BASE_PATH}/${slug}/data.ttl`,
+    sourceIfc: `${MODELS_BASE_PATH}/${slug}/source.ifc`,
+    geometryIfc: `${MODELS_BASE_PATH}/${slug}/geometry.ifc`,
+  };
+}
