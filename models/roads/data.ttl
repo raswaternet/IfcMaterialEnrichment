@@ -1,10 +1,8 @@
 @prefix ifc: <https://standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx#> .
 @prefix ifc-prop: <https://standards.buildingsmart.org/ifc/core/prop@v5a.ifcx#> .
 @prefix inst: <https://raswaternet.github.io/IfcMaterialEnrichment/models/roads/data.ttl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 inst:bd4db354-182b-9210-0000-000000033584 a ifc:IfcBuildingElementProxy ;
-    rdfs:label "BUILDINGELEMENTPROXY(2)" ;
     ifc-prop:name "BUILDINGELEMENTPROXY(2)" .
 
 inst:bd4db354-182b-9210-0000-0000000387f9 a ifc:IfcBuildingElementProxy .
@@ -2078,22 +2076,17 @@ inst:bd4db354-182b-9210-0000-00000003eda4 a ifc:IfcBuildingElementProxy .
 inst:bd4db354-182b-9210-0000-00000003edab a ifc:IfcBuildingElementProxy .
 
 inst:bd4db354-182b-9210-0000-00000003edf3 a ifc:IfcBuildingElementProxy ;
-    rdfs:label "BUILDINGELEMENTPROXY(3)" ;
     ifc-prop:name "BUILDINGELEMENTPROXY(3)" .
 
 inst:bd4db354-182b-9210-0000-00000003edf6 a ifc:IfcBuildingElementProxy ;
-    rdfs:label "BUILDINGELEMENTPROXY(4)" ;
     ifc-prop:name "BUILDINGELEMENTPROXY(4)" .
 
 inst:bd4db354-182b-9210-0000-00000003edf9 a ifc:IfcBuildingElementProxy ;
-    rdfs:label "BUILDINGELEMENTPROXY(5)" ;
     ifc-prop:name "BUILDINGELEMENTPROXY(5)" .
 
 inst:bd4db354-182b-9210-0000-00000003edff a ifc:IfcBuildingElementProxy ;
-    rdfs:label "BUILDINGELEMENTPROXY(7)" ;
     ifc-prop:name "BUILDINGELEMENTPROXY(7)" .
 
 inst:bd4db354-182b-9210-0000-00000003ee02 a ifc:IfcBuildingElementProxy ;
-    rdfs:label "BUILDINGELEMENTPROXY(8)" ;
     ifc-prop:name "BUILDINGELEMENTPROXY(8)" .
 

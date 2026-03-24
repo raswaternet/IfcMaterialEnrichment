@@ -88,6 +88,65 @@ class MaterialExtractor(ConceptExtractor):
         # Category (IFC4+)
         if hasattr(material, "Category") and material.Category:
             self.graph.add((mat_iri, IFC_PROP["category"], Literal(material.Category)))
+        
+        # Material properties (when available)
+        if hasattr(material, "HasProperties") and material.HasProperties:
+            for prop in material.HasProperties:
+                prop_type = prop.is_a()
+                try:
+                    # Extract common material properties
+                    if prop_type == "IfcMaterialProperties":
+                        if hasattr(prop, "IsochloricTemperature") and prop.IsochloricTemperature:
+                            self.graph.add((mat_iri, IFC_MAT["isochloricTemperature"],
+                                Literal(prop.IsochloricTemperature, datatype=XSD.double)))
+                    
+                    # Thermal properties
+                    elif prop_type == "IfcThermalMaterialProperties":
+                        if hasattr(prop, "ThermalConductivity") and prop.ThermalConductivity:
+                            self.graph.add((mat_iri, IFC_MAT["thermalConductivity"],
+                                Literal(prop.ThermalConductivity, datatype=XSD.double)))
+                        if hasattr(prop, "DensityMass") and prop.DensityMass:
+                            self.graph.add((mat_iri, IFC_MAT["densityMass"],
+                                Literal(prop.DensityMass, datatype=XSD.double)))
+                        if hasattr(prop, "SpecificHeatCapacity") and prop.SpecificHeatCapacity:
+                            self.graph.add((mat_iri, IFC_MAT["specificHeatCapacity"],
+                                Literal(prop.SpecificHeatCapacity, datatype=XSD.double)))
+                    
+                    # Mechanical properties
+                    elif prop_type == "IfcMechanicalMaterialProperties":
+                        if hasattr(prop, "YoungModulus") and prop.YoungModulus:
+                            self.graph.add((mat_iri, IFC_MAT["youngsModulus"],
+                                Literal(prop.YoungModulus, datatype=XSD.double)))
+                        if hasattr(prop, "ShearModulus") and prop.ShearModulus:
+                            self.graph.add((mat_iri, IFC_MAT["shearModulus"],
+                                Literal(prop.ShearModulus, datatype=XSD.double)))
+                        if hasattr(prop, "PoissonRatio") and prop.PoissonRatio:
+                            self.graph.add((mat_iri, IFC_MAT["poissonRatio"],
+                                Literal(prop.PoissonRatio, datatype=XSD.double)))
+                    
+                    # Hygroscopic properties
+                    elif prop_type == "IfcHygroscopicMaterialProperties":
+                        if hasattr(prop, "UpperVaporResistanceFactor") and prop.UpperVaporResistanceFactor:
+                            self.graph.add((mat_iri, IFC_MAT["upperVaporResistanceFactor"],
+                                Literal(prop.UpperVaporResistanceFactor, datatype=XSD.double)))
+                        if hasattr(prop, "LowerVaporResistanceFactor") and prop.LowerVaporResistanceFactor:
+                            self.graph.add((mat_iri, IFC_MAT["lowerVaporResistanceFactor"],
+                                Literal(prop.LowerVaporResistanceFactor, datatype=XSD.double)))
+                        if hasattr(prop, "IsothermalMoistureCapacity") and prop.IsothermalMoistureCapacity:
+                            self.graph.add((mat_iri, IFC_MAT["isothermalMoistureCapacity"],
+                                Literal(prop.IsothermalMoistureCapacity, datatype=XSD.double)))
+                    
+                    # LCA/Environmental properties
+                    elif prop_type == "IfcEnvironmentalImpactValue":
+                        if hasattr(prop, "EnvironmentalCost") and prop.EnvironmentalCost:
+                            self.graph.add((mat_iri, IFC_MAT["environmentalCost"],
+                                Literal(prop.EnvironmentalCost, datatype=XSD.double)))
+                        if hasattr(prop, "EnvironmentalCostUnit") and prop.EnvironmentalCostUnit:
+                            self.graph.add((mat_iri, IFC_MAT["environmentalCostUnit"],
+                                Literal(prop.EnvironmentalCostUnit)))
+                except (TypeError, AttributeError):
+                    # Skip properties that can't be accessed
+                    pass
 
     def _convert_layer_set(self, layer_set):
         """Convert IfcMaterialLayerSet to RDF."""

@@ -1,6 +1,6 @@
 @prefix ifc: <https://standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx#> .
 @prefix ifc-prop: <https://standards.buildingsmart.org/ifc/core/prop@v5a.ifcx#> .
-@prefix inst: <https://raswaternet.github.io/IfcMaterialEnrichment/models/bt-test/data.ttl#> .
+@prefix inst: <https://raswaternet.github.io/IfcMaterialEnrichment/models/source/data.ttl#> .
 
 inst:bcb2ba74-0034-e4e8-0000-00000001845e a ifc:IfcBuildingElementProxy ;
     ifc-prop:name "BUILDINGELEMENTPROXY(1)" .

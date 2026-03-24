@@ -86,9 +86,13 @@ def main():
     # Create output directory
     os.makedirs(output_dir, exist_ok=True)
 
-    # Copy source IFC to output folder
+    # Copy source IFC to output folder (skip if exists and locked)
     source_dest = os.path.join(output_dir, "source.ifc")
-    shutil.copy2(args.input, source_dest)
+    try:
+        shutil.copy2(args.input, source_dest)
+    except (PermissionError, OSError):
+        # File may be locked - skip copy and continue
+        pass
 
     print(f"Loading IFC: {args.input}")
     print(f"Model slug: {model_slug}")

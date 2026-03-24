@@ -52,7 +52,6 @@ class PhysicalObjectExtractor(ConceptExtractor):
         "IfcPlate",
         "IfcMember",
         "IfcRailing",
-        "IfcOpeningElement",
         "IfcCovering",
         # Additional building structure elements
         "IfcChimney",
